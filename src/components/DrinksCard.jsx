@@ -1,10 +1,15 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import launchModal from '../utils/launchModal';
 
 
-const MoviesCard = ({drinks}) => {
+const DrinksCard = ({drinks}) => {
+  const handleDrinks = () => {    
+    launchModal(drinks)
+  }
+
   return (
-    <article className="card" >
+    <article className="card" onClick={handleDrinks}>
       <div className="card-image">
         <img src={drinks.strDrinkThumb} alt={drinks.strDrink} />
       </div>
@@ -15,4 +20,4 @@ const MoviesCard = ({drinks}) => {
   )
 }
 
-export default MoviesCard
+export default DrinksCard;

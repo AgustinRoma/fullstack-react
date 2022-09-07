@@ -1,8 +1,10 @@
 import React from 'react'
 
-const LoadNext = () => {
+const LoadNext = ({ load_next }) => {
   return (
-    <div>LoadNext</div>
+    <button className="load-next" onClick={load_next}>
+      Load Next
+    </button>
   )
 }
 
