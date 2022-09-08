@@ -16,9 +16,13 @@ export default function Modal({ root, title, children }) {
   return (
     <div className="modalContainer">
       <div ref={ref} className="modalMiniContainer">
-        <header className="modalHeader">{title}</header>
+        <header className="modalHeader">
+          <h5 className="modalTitle">{title}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick={handleCloseModal}>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
         <div>{children}</div>
-        <button onClick={handleCloseModal}>Entendido</button>
       </div>
     </div>
   );
