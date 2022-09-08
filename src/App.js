@@ -18,7 +18,7 @@ function App() {
   const [paginate, setPaginate] = useState(10);
 
   useEffect(() => {
-    fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a")
+    fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s")
     .then((res) =>res.json())
     .then((data) => {
       console.log(data.drinks);

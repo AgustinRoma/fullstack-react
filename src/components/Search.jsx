@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Form from 'react-bootstrap/Form';
 import Spinner from 'react-bootstrap/Spinner';
 
 const Search = ({ setCocteles }) => {
 
     const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     const handleFilter = (e) => {
         e.preventDefault();
@@ -12,11 +12,8 @@ const Search = ({ setCocteles }) => {
             .then((response) => response.json())
             .then((data) => {
                 setCocteles(data.drinks);
-            },
-                (error) => {
-                    setIsLoading(true);
-                }
-            )
+            })
+            .catch(error => setError(error))
             .finally(() => {
                 setIsLoading(false);
             });
