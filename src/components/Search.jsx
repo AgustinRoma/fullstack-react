@@ -39,7 +39,7 @@ const Search = ({ setCocteles }) => {
                         name="search-form"
                         id="cmbIngrediente"
                         className="search-input"
-                        placeholder="Search for..."
+                        placeholder="Buscar por categoria"
                         onChange={handleFilter} />
                 </label>
             </form>
