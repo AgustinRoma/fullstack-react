@@ -225,7 +225,7 @@ button {
 }
 
 .modalMiniContainer{
-  background: white;
+  background: #563ac5;
   border-radius: 10px;
   padding: 1rem;
   width: 80%;
@@ -256,6 +256,7 @@ button {
   animation-name: fadeOut;
   animation-duration: 0.3s;
 }
+
 
 @keyframes fadeIn {
   from {

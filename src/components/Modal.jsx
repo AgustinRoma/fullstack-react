@@ -18,7 +18,7 @@ export default function Modal({ root, title, children }) {
       <div ref={ref} className="modalMiniContainer">
         <header className="modalHeader">{title}</header>
         <div>{children}</div>
-        <button onClick={handleCloseModal}>imagen para cerrar modal o texto</button>
+        <button onClick={handleCloseModal}>Entendido</button>
       </div>
     </div>
   );
