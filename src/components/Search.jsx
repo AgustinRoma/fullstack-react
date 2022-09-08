@@ -8,7 +8,7 @@ const Search = ({ setCocteles }) => {
 
     const handleFilter = (e) => {
         e.preventDefault();
-        fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${e.target.value}`)
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${e.target.value}`)
             .then((response) => response.json())
             .then((data) => {
                 setCocteles(data.drinks);
