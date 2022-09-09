@@ -77,7 +77,7 @@ width: 100%;
 .card {
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
-  height: 254px;
+  height: 250px;
   background-color: hsl(0deg 0% 100% / 25%);
   padding: 0px;
   box-shadow: 0px 2px 4px var(--border);
@@ -111,6 +111,7 @@ width: 100%;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 0.2em;
+  font-size: 20px;
   color: #fff;
 }
 .card-content p,
