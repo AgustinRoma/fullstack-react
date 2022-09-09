@@ -36,6 +36,12 @@ body {
   font-size: 14px;
 }
 
+#tsparticles{
+margin:-24% ;
+width: 100%;
+}
+
+
 .wrapper {
   width: 96%;
   max-width: 1140px;
@@ -58,7 +64,7 @@ body {
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
   height: 250px;
-  background-color: var(--bg-offset);
+  background-color: hsl(0deg 0% 100% / 25%);
   padding: 0px;
   box-shadow: 0px 2px 4px var(--border);
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -91,7 +97,11 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 0.2em;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+  color: #fff;
+>>>>>>> 391c57ab53a1b43b8d9c67fe35aac27080d35b61
 }
 .card-content p,
 span {
