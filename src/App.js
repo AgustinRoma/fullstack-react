@@ -7,8 +7,10 @@ import DrinksCard from "./components/DrinksCard";
 import LoadNext from './components/LoadNext';
 
 
+
 import './App.css';
 import Search from './components/Search';
+import ParticleBg from './components/ParticleBg';
 
 function App() {
   const [cocteles, setCocteles] = useState([]);
@@ -34,9 +36,13 @@ function App() {
     setPaginate((prevState) => prevState + 10);
   }
 
+
+
   return (
     <>
       <div >
+      <ParticleBg/>
+      
         <div className="wrapper">
           {cocteles.length > 0 && (
             <>
