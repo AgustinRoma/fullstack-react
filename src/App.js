@@ -15,7 +15,6 @@ import ParticleBg from './components/ParticleBg';
 function App() {
   const [cocteles, setCocteles] = useState([]);
   const [error, setError] = useState(null);
-  const [filter, setFilter] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [paginate, setPaginate] = useState(10);
 
