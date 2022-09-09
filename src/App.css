@@ -57,7 +57,7 @@ body {
 .card {
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
-  height: 254px;
+  height: 250px;
   background-color: var(--bg-offset);
   padding: 0px;
   box-shadow: 0px 2px 4px var(--border);
@@ -91,6 +91,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 0.2em;
+  font-size: 20px;
 }
 .card-content p,
 span {
