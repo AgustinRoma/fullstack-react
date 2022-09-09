@@ -9,6 +9,21 @@ function launchModal(drinks) {
   document.body.append(modalWrapper);
 
   const root = createRoot(modalWrapper);
+
+  const instrucciones = drinks.strInstructionsES;
+  let listGroupInstrucciones;
+
+  if (instrucciones) {
+    listGroupInstrucciones = 
+    <ListGroup className="card-modal">
+    <ListGroup.Item variant="primary">
+       <h5> Instrucciones:</h5>
+    </ListGroup.Item>
+    <ListGroup.Item>
+       <p> {drinks.strInstructionsES}</p>
+    </ListGroup.Item>
+    </ListGroup>;
+  }
   root.render(
     <Suspense fallback={<span>Loading Modal Drinks</span>}>
       <Modal root={root} title={drinks.strCategory} >
@@ -20,7 +35,7 @@ function launchModal(drinks) {
           <Col xs={8} md={8}>
             <ListGroup className="card-modal">
               <ListGroup.Item variant="primary">
-                <h5>Ingredientes:</h5>
+              <h5 className="nameDrinkModal">{drinks.strDrink}</h5>
               </ListGroup.Item>
               <ListGroup.Item>
                 <p> {drinks.strIngredient1}</p>
@@ -32,14 +47,7 @@ function launchModal(drinks) {
               </ListGroup.Item>
             </ListGroup>
             <hr/>
-            <ListGroup className="card-modal">
-              <ListGroup.Item variant="primary">
-                <h5> Instrucciones:</h5>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <p> {drinks.strInstructionsES}</p>
-              </ListGroup.Item>
-            </ListGroup>
+            {listGroupInstrucciones}
           </Col>
         </Row>
       </Modal>

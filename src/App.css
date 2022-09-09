@@ -53,7 +53,21 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+.list-group-item:last-child {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  background-color: #000000cc;
+  color: #ffff;
+}
+.list-group-item-primary {
+  color: #f8f9fa;
+  background-color: hsl(0deg 0% 100% / 25%);
+}
+.nameDrinkModal{
+  padding-top: 20px!important;
+  font-weight: bold;
 
+}
 .card-grid {
   margin: 2em 0;
   display: grid;
@@ -233,15 +247,20 @@ button {
   justify-content: center;
 }
 
-.modalMiniContainer{
-  background: #180567;
+.modalMiniContainer {
+  background-image: url(https://www.1zoom.me/big2/36/145919-aleni.jpg);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
   border-radius: 10px;
-  padding: 1rem;
   width: 80%;
   overflow: hidden;
   box-sizing: border-box;
   animation: fadeIn 0.4s ease-in;
   text-align: center;
+  font-weight: bold;
 }
 
 .modal {
