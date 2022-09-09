@@ -97,11 +97,8 @@ width: 100%;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 0.2em;
-<<<<<<< HEAD
   font-size: 20px;
-=======
   color: #fff;
->>>>>>> 391c57ab53a1b43b8d9c67fe35aac27080d35b61
 }
 .card-content p,
 span {

@@ -2,10 +2,6 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 
-
-
-
-
 export const ParticleBg = () => {
 
     const particlesInit = useCallback(async (engine) => {

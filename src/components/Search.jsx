@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Spinner from 'react-bootstrap/Spinner';
 
 const Search = ({ setCocteles }) => {
 
@@ -11,7 +10,12 @@ const Search = ({ setCocteles }) => {
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${e.target.value}`)
             .then((response) => response.json())
             .then((data) => {
-                setCocteles(data.drinks);
+                if(data.drinks) {
+                    setCocteles(data.drinks);
+                } else if(data.drinks == null) {
+                    
+                    return
+                }
             })
             .catch(error => setError(error))
     };
